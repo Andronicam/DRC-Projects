@@ -40,20 +40,23 @@ export function Header({ language, onLanguageChange }: HeaderProps) {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${headerStyle}`}>
       <div className="container mx-auto px-4">
-        <div className="flex items-start justify-between h-32 pt-2">
-          <button onClick={scrollToTop} className="flex items-center hover:opacity-80 transition-opacity">
+        <div className="flex items-start justify-between h-32 pt-1">
+          <button
+            onClick={scrollToTop}
+            className="flex items-center justify-center hover:opacity-80 transition-opacity -mt-2"
+          >
             <Image
               src="/marche-central-logo.png"
               alt="TT Marché Central Logo"
-              width={350}
-              height={210}
-              className={`h-24 w-auto drop-shadow-sm transition-all duration-300 ${
+              width={280}
+              height={168}
+              className={`h-20 w-auto drop-shadow-sm transition-all duration-300 object-contain ${
                 isOverDarkSection ? "" : "filter brightness-0 contrast-150"
               }`}
             />
           </button>
 
-          <div className="flex items-center gap-4 pt-4">
+          <div className="flex items-center gap-4">
             <LanguageToggle
               currentLanguage={language}
               onLanguageChange={onLanguageChange}
