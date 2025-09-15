@@ -14,7 +14,7 @@ const content = {
     email: "marchecentral25@gmail.com",
     rights: "© 2025 TT Marché Central. Tous droits réservés.",
     mission: "Connecter les communautés à travers la République Démocratique du Congo",
-    registration: "Enregistré sous TSHITSHI MARCHE CENTRAL (TT MC SPRL)",
+    registration: "Enregistré sous TT MARCHE CENTRAL SPRL",
   },
   en: {
     address: "Avenue Kalambayi Nzevu No. 1, Quartier de la Poste, Commune de la Muya, Province de Mbuji-Mayi, DRC",
@@ -22,7 +22,7 @@ const content = {
     email: "marchecentral25@gmail.com",
     rights: "© 2025 TT Marché Central. All rights reserved.",
     mission: "Connecting communities across the Democratic Republic of Congo",
-    registration: "Registered as TSHITSHI MARCHE CENTRAL (TT MC SPRL)",
+    registration: "Registered as TT MARCHE CENTRAL SPRL",
   },
 }
 
