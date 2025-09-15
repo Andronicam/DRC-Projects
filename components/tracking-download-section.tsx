@@ -36,24 +36,24 @@ export function TrackingDownloadSection({ language }: TrackingDownloadSectionPro
   const t = content[language]
 
   return (
-    <section className="py-20 bg-gradient-to-br from-emerald-900 to-emerald-800">
+    <section className="py-20 bg-gradient-to-br from-primary to-primary/90">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <Card className="bg-emerald-800 border-emerald-700">
+          <Card className="bg-primary border-primary/70">
             <CardHeader className="text-center">
-              <div className="mx-auto w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mb-6">
-                <MapPin className="h-10 w-10 text-emerald-900" />
+              <div className="mx-auto w-20 h-20 bg-secondary rounded-full flex items-center justify-center mb-6">
+                <MapPin className="h-10 w-10 text-secondary-foreground" />
               </div>
-              <CardTitle className="text-3xl md:text-4xl font-bold text-white mb-4">{t.title}</CardTitle>
-              <p className="text-xl text-yellow-100 text-pretty">{t.subtitle}</p>
+              <CardTitle className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">{t.title}</CardTitle>
+              <p className="text-xl text-primary-foreground/90 text-pretty">{t.subtitle}</p>
             </CardHeader>
             <CardContent className="text-center">
-              <p className="text-lg text-yellow-50 mb-8 text-pretty max-w-2xl mx-auto">{t.description}</p>
+              <p className="text-lg text-primary-foreground/80 mb-8 text-pretty max-w-2xl mx-auto">{t.description}</p>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
                 {t.features.map((feature, index) => (
-                  <div key={index} className="flex items-center gap-2 text-yellow-50">
-                    <div className="w-2 h-2 bg-yellow-500 rounded-full flex-shrink-0" />
+                  <div key={index} className="flex items-center gap-2 text-primary-foreground/90">
+                    <div className="w-2 h-2 bg-secondary rounded-full flex-shrink-0" />
                     <span className="text-sm">{feature}</span>
                   </div>
                 ))}
@@ -62,13 +62,13 @@ export function TrackingDownloadSection({ language }: TrackingDownloadSectionPro
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button
                   size="lg"
-                  className="bg-yellow-500 hover:bg-yellow-600 text-emerald-900 font-semibold px-8 py-3"
+                  className="bg-secondary hover:bg-secondary/80 text-secondary-foreground font-semibold px-8 py-3"
                   disabled
                 >
                   <Smartphone className="h-5 w-5 mr-2" />
                   {t.downloadButton}
                 </Button>
-                <span className="text-yellow-200 text-sm">{t.comingSoon}</span>
+                <span className="text-primary-foreground/70 text-sm">{t.comingSoon}</span>
               </div>
             </CardContent>
           </Card>

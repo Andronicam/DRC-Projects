@@ -34,7 +34,7 @@ export function Footer({ language }: FooterProps) {
   }
 
   return (
-    <footer className="bg-gray-900 py-12 text-white">
+    <footer className="bg-[#F0F5F3] py-12 text-[#1B362F]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <button onClick={scrollToTop} className="inline-block hover:opacity-80 transition-opacity">
@@ -50,28 +50,31 @@ export function Footer({ language }: FooterProps) {
 
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
-            <h3 className="text-xl font-bold mb-4 text-white">TT Marché Central</h3>
-            <p className="text-gray-300 mb-4 text-pretty">{t.mission}</p>
+            <h3 className="text-xl font-bold mb-4 text-[#1B362F]">TT Marché Central</h3>
+            <p className="text-[#1B362F]/80 mb-4 text-pretty">{t.mission}</p>
             <div className="space-y-2">
               <div className="flex items-start gap-2">
-                <MapPin className="h-5 w-5 text-yellow-500 mt-0.5 flex-shrink-0" />
-                <p className="text-sm text-gray-300">{t.address}</p>
+                <MapPin className="h-5 w-5 text-secondary mt-0.5 flex-shrink-0" />
+                <p className="text-sm text-[#1B362F]/80">{t.address}</p>
               </div>
               <div className="flex items-center gap-2">
-                <Phone className="h-5 w-5 text-yellow-500" />
-                <p className="text-sm text-gray-300">{t.phone}</p>
+                <Phone className="h-5 w-5 text-secondary" />
+                <p className="text-sm text-[#1B362F]/80">{t.phone}</p>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="h-5 w-5 text-yellow-500" />
-                <a href={`mailto:${t.email}`} className="text-sm text-gray-300 hover:text-yellow-500 transition-colors">
+                <Mail className="h-5 w-5 text-secondary" />
+                <a
+                  href={`mailto:${t.email}`}
+                  className="text-sm text-[#1B362F]/80 hover:text-secondary transition-colors"
+                >
                   {t.email}
                 </a>
               </div>
             </div>
           </div>
           <div className="text-center md:text-right">
-            <p className="text-sm text-gray-300">{t.rights}</p>
-            <p className="text-xs text-gray-400 mt-1">{t.registration}</p>
+            <p className="text-sm text-[#1B362F]/80">{t.rights}</p>
+            <p className="text-xs text-[#1B362F]/60 mt-1">{t.registration}</p>
           </div>
         </div>
       </div>

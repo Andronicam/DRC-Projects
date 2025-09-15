@@ -4,75 +4,76 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated color scheme to match TT Marché Central brand */
-  --background: oklch(1 0 0); /* White */
+  /* Updated color scheme with new brand colors: green to #1B362F, yellow to #CCB57A, white to #F0F5F3 */
+  --background: oklch(0.97 0.01 142); /* #F0F5F3 - Light mint background */
   --foreground: oklch(0.25 0 0); /* Dark gray */
-  --card: oklch(0.98 0.02 142); /* Light green */
-  --card-foreground: oklch(0.35 0.15 142); /* Dark green */
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.25 0 0);
-  --primary: oklch(0.35 0.15 142); /* Dark green #15803d */
-  --primary-foreground: oklch(1 0 0); /* White */
-  --secondary: oklch(0.75 0.12 85); /* Gold #d6af4b */
-  --secondary-foreground: oklch(1 0 0); /* White */
-  --muted: oklch(0.98 0.02 142); /* Light green */
+  --card: oklch(0.97 0.01 142); /* #F0F5F3 - Light mint */
+  --card-foreground: oklch(0.21 0.05 142); /* #1B362F - Updated dark forest green */
+  --popover: oklch(0.97 0.01 142); /* #F0F5F3 */
+  --popover-foreground: oklch(0.21 0.05 142); /* #1B362F */
+  --primary: oklch(0.21 0.05 142); /* #1B362F - Updated dark forest green */
+  --primary-foreground: oklch(0.97 0.01 142); /* #F0F5F3 - Light mint text */
+  --secondary: oklch(0.75 0.08 85); /* #CCB57A - Muted gold */
+  --secondary-foreground: oklch(0.21 0.05 142); /* #1B362F - Updated dark green text on gold */
+  --muted: oklch(0.95 0.01 142); /* Slightly darker mint */
   --muted-foreground: oklch(0.45 0 0);
-  --accent: oklch(0.75 0.12 85); /* Gold accent */
-  --accent-foreground: oklch(0.35 0.15 142); /* Dark green text on gold */
+  --accent: oklch(0.75 0.08 85); /* #CCB57A - Muted gold accent */
+  --accent-foreground: oklch(0.21 0.05 142); /* #1B362F - Updated dark green text on gold */
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(1 0 0);
+  --destructive-foreground: oklch(0.97 0.01 142); /* #F0F5F3 */
   --border: oklch(0.85 0 0);
-  --input: oklch(0.98 0 0);
-  --ring: oklch(0.35 0.15 142);
-  --chart-1: oklch(0.35 0.15 142);
-  --chart-2: oklch(0.75 0.12 85);
+  --input: oklch(0.97 0.01 142); /* #F0F5F3 */
+  --ring: oklch(0.21 0.05 142); /* #1B362F */
+  --chart-1: oklch(0.21 0.05 142); /* #1B362F */
+  --chart-2: oklch(0.75 0.08 85); /* #CCB57A */
   --chart-3: oklch(0.45 0 0);
-  --chart-4: oklch(0.98 0.02 142);
-  --chart-5: oklch(1 0 0);
+  --chart-4: oklch(0.95 0.01 142);
+  --chart-5: oklch(0.97 0.01 142); /* #F0F5F3 */
   --radius: 0.5rem;
-  --sidebar: oklch(0.98 0.02 142);
-  --sidebar-foreground: oklch(0.25 0 0);
-  --sidebar-primary: oklch(0.35 0.15 142);
-  --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.75 0.12 85);
-  --sidebar-accent-foreground: oklch(0.35 0.15 142);
+  --sidebar: oklch(0.97 0.01 142); /* #F0F5F3 */
+  --sidebar-foreground: oklch(0.21 0.05 142); /* #1B362F */
+  --sidebar-primary: oklch(0.21 0.05 142); /* #1B362F */
+  --sidebar-primary-foreground: oklch(0.97 0.01 142); /* #F0F5F3 */
+  --sidebar-accent: oklch(0.75 0.08 85); /* #CCB57A */
+  --sidebar-accent-foreground: oklch(0.21 0.05 142); /* #1B362F */
   --sidebar-border: oklch(0.85 0 0);
-  --sidebar-ring: oklch(0.35 0.15 142);
+  --sidebar-ring: oklch(0.21 0.05 142); /* #1B362F */
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.2 0.05 142);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.75 0.12 85);
-  --primary-foreground: oklch(0.145 0 0);
-  --secondary: oklch(0.35 0.15 142);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.2 0.05 142);
+  /* Updated dark mode colors to complement the new brand palette */
+  --background: oklch(0.15 0.02 142); /* Dark version of mint */
+  --foreground: oklch(0.97 0.01 142); /* #F0F5F3 - Light mint text */
+  --card: oklch(0.18 0.03 142); /* Darker mint card */
+  --card-foreground: oklch(0.97 0.01 142); /* #F0F5F3 */
+  --popover: oklch(0.15 0.02 142);
+  --popover-foreground: oklch(0.97 0.01 142); /* #F0F5F3 */
+  --primary: oklch(0.75 0.08 85); /* #CCB57A - Gold primary in dark mode */
+  --primary-foreground: oklch(0.15 0.02 142); /* Dark background text */
+  --secondary: oklch(0.21 0.05 142); /* #1B362F - Updated dark green secondary */
+  --secondary-foreground: oklch(0.97 0.01 142); /* #F0F5F3 */
+  --muted: oklch(0.18 0.03 142);
   --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.75 0.12 85);
-  --accent-foreground: oklch(0.145 0 0);
+  --accent: oklch(0.75 0.08 85); /* #CCB57A - Gold accent */
+  --accent-foreground: oklch(0.15 0.02 142);
   --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.985 0 0);
+  --destructive-foreground: oklch(0.97 0.01 142); /* #F0F5F3 */
   --border: oklch(0.269 0 0);
   --input: oklch(0.269 0 0);
-  --ring: oklch(0.75 0.12 85);
-  --chart-1: oklch(0.75 0.12 85);
-  --chart-2: oklch(0.35 0.15 142);
+  --ring: oklch(0.75 0.08 85); /* #CCB57A */
+  --chart-1: oklch(0.75 0.08 85); /* #CCB57A */
+  --chart-2: oklch(0.21 0.05 142); /* #1B362F */
   --chart-3: oklch(0.708 0 0);
-  --chart-4: oklch(0.2 0.05 142);
-  --chart-5: oklch(0.145 0 0);
-  --sidebar: oklch(0.2 0.05 142);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.75 0.12 85);
-  --sidebar-primary-foreground: oklch(0.145 0 0);
-  --sidebar-accent: oklch(0.35 0.15 142);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --chart-4: oklch(0.18 0.03 142);
+  --chart-5: oklch(0.15 0.02 142);
+  --sidebar: oklch(0.18 0.03 142);
+  --sidebar-foreground: oklch(0.97 0.01 142); /* #F0F5F3 */
+  --sidebar-primary: oklch(0.75 0.08 85); /* #CCB57A */
+  --sidebar-primary-foreground: oklch(0.15 0.02 142);
+  --sidebar-accent: oklch(0.21 0.05 142); /* #1B362F */
+  --sidebar-accent-foreground: oklch(0.97 0.01 142); /* #F0F5F3 */
   --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.75 0.12 85);
+  --sidebar-ring: oklch(0.75 0.08 85); /* #CCB57A */
 }
 
 @theme inline {

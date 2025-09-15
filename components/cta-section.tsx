@@ -61,7 +61,7 @@ export function CTASection({ language }: CTASectionProps) {
               <Button
                 size="lg"
                 onClick={() => setShowForm(true)}
-                className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold"
+                className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold"
               >
                 <Mail className="mr-2 h-5 w-5" />
                 {t.interestButton}
