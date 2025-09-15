@@ -40,14 +40,14 @@ export function Header({ language, onLanguageChange }: HeaderProps) {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${headerStyle}`}>
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-36">
+        <div className="flex items-center justify-between h-32">
           <button onClick={scrollToTop} className="flex items-center hover:opacity-80 transition-opacity">
             <Image
               src="/marche-central-logo.png"
               alt="TT Marché Central Logo"
-              width={420}
-              height={252}
-              className={`h-28 w-auto drop-shadow-sm transition-all duration-300 ${
+              width={350}
+              height={210}
+              className={`h-24 w-auto drop-shadow-sm transition-all duration-300 ${
                 isOverDarkSection ? "" : "filter brightness-0 contrast-150"
               }`}
             />
