@@ -36,14 +36,14 @@ export function Footer({ language }: FooterProps) {
   return (
     <footer className="bg-gray-900 py-12 text-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-10">
+        <div className="text-center mb-12">
           <button onClick={scrollToTop} className="inline-block hover:opacity-80 transition-opacity">
             <Image
               src="/marche-central-logo.png"
               alt="TT Marché Central Logo"
-              width={220}
-              height={132}
-              className="h-18 w-auto drop-shadow-lg"
+              width={350}
+              height={210}
+              className="h-26 w-auto drop-shadow-lg"
             />
           </button>
         </div>
