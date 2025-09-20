@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Mail, User, Building, MapPin, Phone } from "lucide-react"
+import { Mail, User, Phone } from "lucide-react"
 import { submitInterestForm } from "@/app/actions/submit-form"
 
 interface InterestFormProps {
@@ -22,10 +22,6 @@ const content = {
     name: "Nom Complet",
     email: "Adresse Email",
     phone: "Numéro de Téléphone",
-    businessName: "Nom de l'Entreprise",
-    businessAddress: "Adresse de l'Entreprise",
-    contactPerson: "Personne de Contact Principal",
-    contactPhone: "Téléphone de Contact",
     message: "Message (Optionnel)",
     submit: "Soumettre",
     submitting: "Envoi en cours...",
@@ -38,10 +34,6 @@ const content = {
     name: "Full Name",
     email: "Email Address",
     phone: "Phone Number",
-    businessName: "Business Name",
-    businessAddress: "Business Address",
-    contactPerson: "Main Contact Person",
-    contactPhone: "Contact Phone",
     message: "Message (Optional)",
     submit: "Submit",
     submitting: "Submitting...",
@@ -56,10 +48,6 @@ export function InterestForm({ language }: InterestFormProps) {
     name: "",
     email: "",
     phone: "",
-    businessName: "",
-    businessAddress: "",
-    contactPerson: "",
-    contactPhone: "",
     message: "",
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -77,10 +65,6 @@ export function InterestForm({ language }: InterestFormProps) {
         name: "",
         email: "",
         phone: "",
-        businessName: "",
-        businessAddress: "",
-        contactPerson: "",
-        contactPhone: "",
         message: "",
       })
     } catch (error) {
@@ -145,56 +129,6 @@ export function InterestForm({ language }: InterestFormProps) {
               onChange={(e) => handleInputChange("phone", e.target.value)}
               required
             />
-          </div>
-
-          {/* Business Information - Always visible now */}
-          <div className="space-y-4 p-4 bg-muted/50 rounded-lg">
-            <div className="space-y-2">
-              <Label htmlFor="businessName" className="flex items-center gap-2">
-                <Building className="h-4 w-4" />
-                {t.businessName}
-              </Label>
-              <Input
-                id="businessName"
-                value={formData.businessName}
-                onChange={(e) => handleInputChange("businessName", e.target.value)}
-              />
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="businessAddress" className="flex items-center gap-2">
-                <MapPin className="h-4 w-4" />
-                {t.businessAddress}
-              </Label>
-              <Textarea
-                id="businessAddress"
-                value={formData.businessAddress}
-                onChange={(e) => handleInputChange("businessAddress", e.target.value)}
-              />
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <Label htmlFor="contactPerson" className="flex items-center gap-2">
-                  <User className="h-4 w-4" />
-                  {t.contactPerson}
-                </Label>
-                <Input
-                  id="contactPerson"
-                  value={formData.contactPerson}
-                  onChange={(e) => handleInputChange("contactPerson", e.target.value)}
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="contactPhone" className="flex items-center gap-2">
-                  <Phone className="h-4 w-4" />
-                  {t.contactPhone}
-                </Label>
-                <Input
-                  id="contactPhone"
-                  value={formData.contactPhone}
-                  onChange={(e) => handleInputChange("contactPhone", e.target.value)}
-                />
-              </div>
-            </div>
           </div>
 
           {/* Optional Message */}

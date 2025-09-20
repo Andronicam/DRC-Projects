@@ -48,9 +48,9 @@ export function Header({ language, onLanguageChange }: HeaderProps) {
             <Image
               src="/marche-central-logo.png"
               alt="TT Marché Central Logo"
-              width={280}
-              height={168}
-              className={`h-20 w-auto drop-shadow-sm transition-all duration-300 object-contain ${
+              width={350}
+              height={210}
+              className={`h-24 w-auto drop-shadow-sm transition-all duration-300 object-contain ${
                 isOverDarkSection ? "" : "filter brightness-0 contrast-150"
               }`}
             />
